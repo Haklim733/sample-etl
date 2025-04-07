@@ -1,0 +1,24 @@
+[project]
+name = "sample-etl"
+version = "0.1.0"
+description = "sample etl process"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "duckdb>=1.2.1",
+    "psutil>=7.0.0",
+]
+
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "pandas>=2.2.3",
+    "pytest>=8.3.5",
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+    "-v"
+]

@@ -1,0 +1,8 @@
+*.csv
+logs
+*.duckdb
+*.db
+**/__pycache__
+.venv
+*.ipynb
+.env
